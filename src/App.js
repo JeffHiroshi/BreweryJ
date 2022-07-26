@@ -1,14 +1,13 @@
-import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import BeersList from './features/beers/BeersList';
+import BeersDirectoryPage from './pages/BeersDirectoryPage';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <BeersList />
+      <BeersDirectoryPage />
       <Footer />
     </div>
   );
