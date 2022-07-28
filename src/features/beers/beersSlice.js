@@ -11,3 +11,7 @@ export const selectAllBeers = () => {
 export const selectBeerById = (id) => {
     return BEERS.find((beer) => beer.id === id);
 }
+
+export const selectFeaturedBeer = () => {
+    return BEERS.find((beer) => beer.featured);
+}
