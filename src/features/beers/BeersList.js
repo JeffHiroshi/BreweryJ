@@ -2,7 +2,7 @@ import { Col, Row } from 'reactstrap';
 import BeerCard from './BeerCard';
 import { selectAllBeers } from "./beersSlice";
 
-const BeersList = ({ setBeerId }) => {
+const BeersList = () => {
     const beers = selectAllBeers();
 
     return (
@@ -13,7 +13,6 @@ const BeersList = ({ setBeerId }) => {
                     md='5'
                     className='m-4'
                     key={beer.id}
-                    onClick={() => setBeerId(beer.id)}
                 >
                     <BeerCard beer={beer} />
                 </Col>

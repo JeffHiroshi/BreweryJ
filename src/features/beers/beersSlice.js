@@ -9,7 +9,7 @@ export const selectAllBeers = () => {
 // };
 
 export const selectBeerById = (id) => {
-    return BEERS.find((beer) => beer.id === id);
+    return BEERS.find((beer) => beer.id === parseInt(id));
 }
 
 export const selectFeaturedBeer = () => {
