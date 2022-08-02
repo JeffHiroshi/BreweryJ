@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import BeersDirectoryPage from './pages/BeersDirectoryPage';
 import BeerDetailPage from './pages/BeerDetailPage';
 import './App.css';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             />
             <Route path='directory/:beerId' element={<BeerDetailPage />}
             />
+            <Route path='about' element={<AboutPage/>} />
         </Routes>
       <Footer />
     </div>
