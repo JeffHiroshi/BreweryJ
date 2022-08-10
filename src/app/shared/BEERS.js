@@ -9,6 +9,7 @@ export const BEERS = [
         name: "IPA",
         image: ipaImg,
         IBUs: 100,
+        price: 7,
         featured: true,
         description: "An explosion of tropical fruit aromas are balanced by a clean malt backbone in this emminently drinkable West Coast IPA."
     },
@@ -17,6 +18,7 @@ export const BEERS = [
         name:"Pilsner",
         image: pilsnerImg,
         IBUs: 40,
+        price: 6,
         featured: false,
         description: "Crisp and clean yet full of flavor."
     },
@@ -25,6 +27,7 @@ export const BEERS = [
         name:"Hazy Double IPA",
         image: hazyDoubleIpaImg,
         IBUs: 120,
+        price: 8,
         featured: false,
         description: "Dry hopping lends intense tropical aromas to this juicy DIPA."
     },
@@ -33,6 +36,7 @@ export const BEERS = [
         name:"Stout",
         image: stoutImg,
         IBUs: 30,
+        price: 8,
         featured: false,
         description: "Roasted malts give this stout notes of coffee and chocolate."
     }

@@ -19,7 +19,7 @@ const AnimatedDisplayCard = ({ item }) => {
     return (
         <animated.div style={animatedStyle}>
             <Card>
-                <CardImg src={image} alt={name} />
+                <CardImg src={image} alt={name} height='500px'/>
                 <CardBody>
                     <CardTitle>{name}</CardTitle>
                     <CardText>{description}</CardText>
