@@ -29,7 +29,7 @@ const BeerCard = ({ beer }) => {
                     </CardTitle>
                     <div className='mt-auto'>
                         {quantity === 0 ? (
-                            <Button className='w-100' onClick={() => increaseCartQuantity(id)}>+ Add To Cart
+                            <Button color='primary' className='w-100' onClick={() => increaseCartQuantity(id)}>+ Add To Cart
                             </Button>
                         ) : (
                         <div 
@@ -38,13 +38,13 @@ const BeerCard = ({ beer }) => {
                             <div 
                                 className='d-flex align-items-center justify-content-center' style={{ gap: '.5rem'}}
                             >
-                                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                                <Button color='primary' onClick={() => decreaseCartQuantity(id)}>-</Button>
                                 <div>
                                     <span className='fs-3'>{quantity}</span> in cart
                                 </div>
-                                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                                <Button color='primary' onClick={() => increaseCartQuantity(id)}>+</Button>
                             </div>
-                            <Button variant='danger' size='sm'
+                            <Button color='danger' size='sm'
                             onClick={() => removeFromCart(id)}>Remove</Button>
                         </div>)}
                     </div>
