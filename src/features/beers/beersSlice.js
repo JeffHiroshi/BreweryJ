@@ -1,29 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { BEERS } from "../../app/shared/BEERS";
 
-const initialSlice = {
+const initialState = {
     beersArray: BEERS
 }
 
 const beersSlice = createSlice({
     name: 'beers',
-    initialState: 'initialState'
+    initialState
 })
 
 export const beersReducer = beersSlice.reducer;
 
-export const selectAllBeers = () => {
-    return BEERS;
+export const selectAllBeers = (state) => {
+    return state.beers.beersArray;
 };
 
 // export const selectRandomBeer = () => {
 //     return BEERS[Math.floor(Math.random() * BEERS.length)]
 // };
 
-export const selectBeerById = (id) => {
-    return BEERS.find((beer) => beer.id === parseInt(id));
+export const selectBeerById = (id) => (state) => {
+    return state.beers.beersArray.find((beer) => beer.id === parseInt(id));
 }
 
-export const selectFeaturedBeer = () => {
-    return BEERS.find((beer) => beer.featured);
+export const selectFeaturedBeer = (state) => {
+    return state.beers.beersArray.find((beer) => beer.featured);
 }
