@@ -11,6 +11,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import BreweryJLogo from '../app/assets/img/logo.png';
 import { useShoppingCart } from '../context/ShoppingCartContext';
+import UserLoginForm from '../features/user/UserLoginForm';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -47,6 +48,8 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                 </Nav>
+                <UserLoginForm />
+                
                 {cartQuantity > 0 && (
                 <Button 
                     onClick={openCart}
@@ -80,6 +83,7 @@ const Header = () => {
                     
                 </Button>
             )}
+            
             </Collapse>
         </Navbar>
     );
